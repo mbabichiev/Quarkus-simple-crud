@@ -21,6 +21,7 @@ public class CarController {
 
     @POST
     @Transactional
+    @ResponseStatus(201)
     public void create(Car car) {
         carService.create(car);
     }
