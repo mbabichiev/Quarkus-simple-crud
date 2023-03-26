@@ -32,6 +32,10 @@
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-resteasy-reactive-qute</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
             <artifactId>quarkus-hibernate-orm-rest-data-panache</artifactId>
         </dependency>
         <dependency>
@@ -47,7 +51,6 @@
             <artifactId>lombok</artifactId>
             <version>1.18.26</version>
         </dependency>
-
 
         <!-- Testing: -->
         <dependency>

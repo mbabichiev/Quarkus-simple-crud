@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>{car.brand} {car.model}</title>
+</head>
+<body>
+
+    <h1>Car "{car.brand} {car.model}"</h1>
+
+    <p><strong>Id:</strong> {car.id}</p>
+    <p><strong>Brand:</strong> {car.brand}</p>
+    <p><strong>Model:</strong> {car.model}</p>
+    <p><strong>Country:</strong> {car.country}</p>
+    <p><strong>Price:</strong> {car.price} $</p>
+
+    <form action="/update/{car.id}" method="get">
+        <button>Update</button>
+    </form>
+
+    <form action="/delete/{car.id}" method="post">
+        <button>Delete</button>
+    </form>
+
+</body>
+</html>

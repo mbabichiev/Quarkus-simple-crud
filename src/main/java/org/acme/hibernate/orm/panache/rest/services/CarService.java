@@ -1,10 +1,12 @@
 package org.acme.hibernate.orm.panache.rest.services;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import io.quarkus.hibernate.orm.panache.PanacheQuery;
 import org.acme.hibernate.orm.panache.rest.exceptions.RestApplicationException;
 import org.acme.hibernate.orm.panache.rest.models.Car;
 
 import javax.enterprise.context.ApplicationScoped;
+import java.util.List;
 
 @ApplicationScoped
 public class CarService {
@@ -14,6 +16,7 @@ public class CarService {
 
 
     public void create(Car car) {
+        System.out.println("Create car with name: " + car.brand);
         car.persist();
     }
 
@@ -24,6 +27,11 @@ public class CarService {
             throw new RestApplicationException(String.format(ERROR_TEMPLATE, id));
         }
         return car;
+    }
+
+
+    public List<Car> getAll() {
+        return Car.listAll();
     }
 
 

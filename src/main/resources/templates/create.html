@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Create car</title>
+</head>
+<body>
+    <h1>Create car:</h1>
+
+    <form action="/cars" target="_self" method="POST">
+        <label for="brand">Brand:</label><br>
+        <input type="text" id="brand" name="brand"><br><br>
+        <label for="model">Model:</label><br>
+        <input type="text" id="model" name="model"><br><br>
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country"><br><br>
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price"><br><br>
+
+        <button type="submit">Create</button>
+    </form>
+
+</body>
+</html>

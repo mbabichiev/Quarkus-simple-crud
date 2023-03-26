@@ -21,6 +21,18 @@ public class Car extends PanacheEntityBase {
     @Column(nullable = false)
     public Integer price;
 
+
+    public Car(){}
+
+
+    public Car(String brand, String model, String country, Integer price) {
+        this.brand = brand;
+        this.model = model;
+        this.country = country;
+        this.price = price;
+    }
+
+
     @Override
     public String toString() {
         return "Car{" +

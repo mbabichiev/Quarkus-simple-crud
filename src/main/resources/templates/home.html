@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Cars:</h1>
+    <button><a href="/create">Create car</a></button>
+    {#for car in cars}
+    <p><a href="/cars/{car.id}">{car.id}. {car.brand} {car.model} - {car.price} $</a></p>
+    {/for}
+</body>
+</html>
