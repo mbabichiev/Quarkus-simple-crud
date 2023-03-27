@@ -1,7 +1,6 @@
 package org.acme.hibernate.orm.panache.rest.services;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
-import io.quarkus.hibernate.orm.panache.PanacheQuery;
+
 import org.acme.hibernate.orm.panache.rest.exceptions.RestApplicationException;
 import org.acme.hibernate.orm.panache.rest.models.Car;
 
